@@ -1,26 +1,24 @@
 import { AiOutlineRight } from "react-icons/ai";
 export const Button = ({
   children,
-  url,
-  bgColor,
+  bgColor = "bg-blue-100",
   withIcon = false,
   outlined = false,
   hover = true,
-  className,
-  spanClass,
+  className="",
+  spanClass="",
 }) => {
   return (
     <button
-      className={`${className} ${bgColor || "bg-blue-100"} ${
-        outlined
-          ? "bg-transparent text-black outline outline-1 outline-dark"
-          : "text-white"
-      } py-4 pl-8 pr-8 rounded-full flex flex-row items-center`}
+      className={`${bgColor} ${className} ${outlined
+        ? "bg-transparent text-black outline outline-1 outline-dark"
+        : "text-white"
+        } py-4 pl-8 pr-8 rounded-full flex flex-row items-center`}
     >
       <span className={`${hover && "hover:opacity-100"} ${spanClass}`}>
         {children}
       </span>
-      {withIcon && <AiOutlineRight className="ml-6  bg-white rounded-full text-blue-100 -mr-4 my-[10px] mx-[10px]"/>}
+      {withIcon && <span className={"bg-white p-2 ml-6 rounded-full text-blue-100 -mr-4"}><AiOutlineRight /></span>}
     </button>
   );
 };

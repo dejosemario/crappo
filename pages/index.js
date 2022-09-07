@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
 
-      <Button outlined={false} bgColor={'bg-blue-900'} withIcon={true}>
+      <Button withIcon={true}>
         Login
       </Button>
 
