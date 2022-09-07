@@ -5,7 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    color: {
+    colors: {
       blue: {
         900: '#0D0D2B',
         600: '#2B076E',
@@ -15,7 +15,8 @@ module.exports = {
         100: '#3671E9',
         10: '#E0E0E0',
       },
-      grey: '#828282'
+      grey: '#828282',
+      white: '#FFFFFF'
     },
     container: {
       center: true,
