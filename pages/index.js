@@ -1,11 +1,16 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Button from "../src/components/atoms/Button";
+import { AiOutlineRight } from "react-icons/ai";
+
 
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      let's get started!
-    </h1>
-  )
+    <div>
+
+      <Button outlined={false} bgColor={'bg-blue-900'} withIcon={true}>
+        Login
+      </Button>
+
+      </div>
+    
+  );
 }
