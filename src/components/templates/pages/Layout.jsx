@@ -8,7 +8,7 @@ export const Layout = ({ children, ...customMeta }) => {
     ...customMeta,
   };
   return (
-    <div>
+    <div className="max-w-[1440px] mx-auto">
       <Head>
         <title>{meta.title} | A Free CryptoCurrency Website</title>
         <meta content={meta.description} name="description" />
