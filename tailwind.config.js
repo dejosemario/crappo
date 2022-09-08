@@ -28,11 +28,11 @@ module.exports = {
         '2xl': '0',
       },
       screens: {
-        sm: '540px',
-        md: '720px',
-        lg: '960px',
-        xl: '1140px',
-        '2xl': '1260px',
+        sm: '448px',
+        md: '736px',
+        lg: '736px',
+        xl: '960px',
+        '2xl': '1200px',
       },
     },
     screens:{
