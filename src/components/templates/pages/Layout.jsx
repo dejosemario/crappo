@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export const Layout = ({ children, ...customMeta }) => {
   const meta = {
-    title: "Crappo",
+    title: "Crappo | A Free CryptoCurrency Website",
     type: "website",
     description: "Crappo - It's a cryptocurrency site",
     ...customMeta,
@@ -10,7 +10,7 @@ export const Layout = ({ children, ...customMeta }) => {
   return (
     <div className="max-w-[1440px] mx-auto">
       <Head>
-        <title>{meta.title} | A Free CryptoCurrency Website</title>
+        <title>{meta.title}</title>
         <meta content={meta.description} name="description" />
         <meta property="og:type" content={meta.type} />
         <meta
@@ -23,8 +23,8 @@ export const Layout = ({ children, ...customMeta }) => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         {/* <link rel="preload" as="image" href="/images/brand-logo.svg"></link> */}
-        <main>{children}</main>
       </Head>
+        <main>{children}</main>
     </div>
   );
 };
