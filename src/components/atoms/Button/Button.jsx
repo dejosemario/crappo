@@ -13,12 +13,12 @@ export const Button = ({
       className={`${bgColor} ${className} ${outlined
         ? "bg-transparent text-black outline outline-1 outline-dark"
         : "text-white"
-        } py-4 pl-8 pr-8 rounded-full flex flex-row items-center`}
+        } py-1 px-4 rounded-full flex flex-row items-center`}
     >
       <span className={`${hover && "hover:opacity-100"} ${spanClass}`}>
         {children}
       </span>
-      {withIcon && <span className={"bg-white p-2 ml-6 rounded-full text-blue-100 -mr-4"}><AiOutlineRight /></span>}
+      {withIcon && <span className={"bg-white p-2 ml-4 rounded-full text-blue-100 "}><AiOutlineRight /></span>}
     </button>
   );
 };

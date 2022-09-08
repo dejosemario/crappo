@@ -8,7 +8,8 @@ export const HomePage = () => {
   return (
     <div className="container">
       <Heading level={2}>Welcome</Heading>
-      <Button withIcon={true}>Login</Button>
+      <Button withIcon={true}>Try For FREE</Button>
+      <Button withIcon={false}>Register</Button>
       <Links url="#">Click Here</Links>
       <Text>I am emeka</Text>
       <NextImage width="604px" height="586px" imgUrl="/images/flat-btc.svg" />
