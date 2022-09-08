@@ -1,8 +1,8 @@
-import Button from "../../../atoms/Button"
-// import { AiOutlineRight } from "react-icons/ai";
+import Button from "../../../atoms/Button";
 import Links from "../../../atoms/Link";
 import Text from "../../../atoms/Text";
 import Heading  from "../../../atoms/Heading";
+import NextImage from "../../../atoms/NextImage";
 
 export const HomePage = () => {
   return (
@@ -11,6 +11,7 @@ export const HomePage = () => {
       <Button withIcon={true}>Login</Button>
       <Links url="#">Click Here</Links>
       <Text>I am emeka</Text>
+      <NextImage width="604px" height="586px" imgUrl="/images/flat-btc.svg" />
     </div>
   );
 };
