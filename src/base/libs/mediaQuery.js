@@ -1,14 +1,19 @@
 import { useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
 
-//To get back later
-// export const mediaQuery = (query) => {
-//   const [matches, setMatches] = useState(null);
-//   const mediaScreen = useMediaQuery({ query });
-//   useEffect(() => {
-//     mediaScreen ? setMatches(true) : setMatches(false);
-//   }, [mediaScreen]);
-//   return (matches);
-// };
+export function useMediaQuery(query) {
+  const [matches, setMatches] = useState(false);
 
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    if (media.matches !== matches) {
+      setMatches(media.matches);
+    }
+    const listener = () => {
+      setMatches(media.matches);
+    };
+    media.addListener(listener);
+    return () => media.removeListener(listener);
+  }, [matches, query]);
 
+  return matches;
+}
