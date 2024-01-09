@@ -3,18 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0; /* Keep foreground color as is */
+  --background-start-rgb: 13, 13, 43; /* Updated to RGB value */
+  --background-end-rgb: 13, 13, 43; /* Updated to RGB value */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 255, 255, 255; /* Keep dark mode foreground color */
+    --background-start-rgb: 13, 13, 43; /* Updated to RGB value for dark mode */
+    --background-end-rgb: 13, 13, 43; /* Updated to RGB value for dark mode */
   }
 }
+
 
 body {
   color: rgb(var(--foreground-rgb));
