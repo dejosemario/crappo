@@ -10,7 +10,7 @@ const CrappoLogo: React.FC = () => {
         imgUrl={Logo}
         alt={"crappo-logo"}
       />
-      <Heading level={4} className="font-inter">Crappo</Heading>
+      <Heading level={4} className="font-inter font-semi-bold">CRAPPO</Heading>
     </div>
   );
 };
