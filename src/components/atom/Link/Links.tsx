@@ -4,12 +4,14 @@ interface linksProp {
   url: string;
   children: React.ReactNode;
   className?: string;
+  alt?: string;
+
 }
 
-export const Links = ({ url, children, className }: linksProp) => {
+export const Links = ({ url, children, className, alt }: linksProp) => {
   return (
     <Link href={url} passHref>
-      <a className={className}>{children}</a>
+      {children}
     </Link>
   );
 };
