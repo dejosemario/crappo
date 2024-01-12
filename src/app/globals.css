@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0; /* Keep foreground color as is */
+  --foreground-rgb: 255, 255, 255; /* Keep foreground color as is */
   --background-start-rgb: 13, 13, 43; /* Updated to RGB value */
   --background-end-rgb: 13, 13, 43; /* Updated to RGB value */
 }

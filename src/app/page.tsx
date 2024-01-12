@@ -1,13 +1,14 @@
-import { Button } from '@/components/atom/Button/Button'
-import CrappoLogo from '@/components/molecules/Logo/CrappoLogo'
-import Image from 'next/image'
+import { Button } from "@/components/atom/Button/Button";
+import Header from "@/components/organisms/Layouts/Navlayout/Header";
+import NavLayout from "@/components/organisms/Layouts/Navlayout/Header";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>Welcome to crappo app</div>
-      <Button withIcon >Click me</Button>
-      <CrappoLogo />
+    <main className=" mx-[120px] mt-[75px] flex min-h-screen flex-col items-center justify-between p-x-24">
+      <Header />
+
+      <Button withIcon>Click me</Button>
     </main>
-  )
+  );
 }

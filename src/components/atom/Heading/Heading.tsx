@@ -38,7 +38,7 @@ export const Heading = ({ children, level, className }: HeadingProps) => {
       );
     case 6:
       return (
-        <h6 className={`font-bold text-[1.125rem] leading-9 ${className}`}>
+        <h6 className={`font-normal text-[1.125rem] leading-9 ${className}`}>
           {children}
         </h6>
       );
