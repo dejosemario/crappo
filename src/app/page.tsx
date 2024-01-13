@@ -10,6 +10,7 @@ export default function Home() {
       <Header />
       <Button withIcon>Click me</Button>
       <Footer />
+      <NavLayout />
     </main>
   );
 }
