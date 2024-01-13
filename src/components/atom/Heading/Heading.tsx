@@ -26,13 +26,13 @@ export const Heading = ({ children, level, className }: HeadingProps) => {
       );
     case 4:
       return (
-        <h4 className={`font-bold text-[1.25rem] leading-normal ${className}`}>
+        <h4 className={`font-normal text-[1.25rem] leading-normal ${className}`}>
           {children}
         </h4>
       );
     case 5:
       return (
-        <h5 className={`font-bold text-[1.rem] leading-7 ${className}`}>
+        <h5 className={`font-normal text-[1rem] leading-7 ${className}`}>
           {children}
         </h5>
       );
