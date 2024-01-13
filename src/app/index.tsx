@@ -1,3 +1,10 @@
 import Home from "./page";
 
-export default Home;
+
+const Main: React.FC = () =>{
+    return(
+        <Home />
+    )
+}
+
+export default Main;
