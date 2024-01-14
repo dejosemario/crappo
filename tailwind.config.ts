@@ -16,6 +16,9 @@ const config: Config = {
       fontFamily: {
         inter: ["var(--font-inter)"],
       },
+      backgroundColor: {
+        'white-10' : 'rgba(255, 255, 255, 0.10)',
+      }
     },
   },
   plugins: [],
