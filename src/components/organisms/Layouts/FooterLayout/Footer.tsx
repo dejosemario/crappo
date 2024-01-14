@@ -26,12 +26,12 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="flex flex-col w-full border">
-      <div className="flex w-full justify-between items-start">
+    <footer className="flex flex-col w-full py-[80px] h-[522px] justify-between">
+      <div className="flex w-full justify-between items-start flex-wrap">
         <CrappoLogo />
         <div className="flex flex-col ">
-          <Heading level={6}>Quick Link</Heading>
-          <div className="flex flex-col">
+          <Heading level={5}>Quick Link</Heading>
+          <div className="flex flex-col pt-8 h-[190px] justify-between">
             {products.map((product, index) => (
               <Links
                 key={index}
@@ -44,8 +44,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col">
-          <Heading level={6}>Resources</Heading>
-          <div className="flex flex-col">
+          <Heading level={5}>Resources</Heading>
+          <div className="flex flex-col  pt-8  h-[190px] justify-between">
             {Resources.map((resource, index) => (
               <Links
                 key={index}
@@ -57,9 +57,9 @@ const Footer: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col w-[355px]">
+        <div className="flex flex-col w-[355px] gap-12">
           <Heading level={3}>We Accept following payment systems</Heading>
-          <div className="flex">
+          <div className="flex justify-between">
             <NextImage imgUrl={Visa} alt={"visa"} width={96} height={64} />
             <NextImage imgUrl={MasterCard} alt={"mastercard"} />
             <NextImage imgUrl={Bitcoin} alt={"bitcoin"} />
