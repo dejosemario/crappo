@@ -1,3 +1,5 @@
+import { Rubik } from "next/font/google";
+
 interface HeadingProps {
   children: React.ReactNode;
   level: 1 | 2 | 3 | 4 | 5 | 6;
@@ -32,7 +34,7 @@ export const Heading = ({ children, level, className }: HeadingProps) => {
       );
     case 5:
       return (
-        <h5 className={`font-normal text-[1rem] leading-7 ${className}`}>
+        <h5 className={`font-normal font-semibold text-[1rem] leading-7 ${className}`}>
           {children}
         </h5>
       );

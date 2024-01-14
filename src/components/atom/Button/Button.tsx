@@ -7,12 +7,12 @@ interface ButtonProps {
   hover?: boolean | true;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button = ({
   children,
   withIcon,
   outlined,
   hover,
-}) => {
+}: ButtonProps) => {
   return (
     <button
       className={` ${
