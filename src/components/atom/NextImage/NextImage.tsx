@@ -4,7 +4,7 @@ interface NextImageProps {
     width?: number;
     height?: number;
     auto?: boolean;
-    imgUrl: string;
+    imgUrl: string | any;
     className?: string;
     alt: string;
 }
@@ -17,6 +17,7 @@ export const NextImage = ({ width, height, auto, imgUrl, className, alt }: NextI
             className={className}
             width={width}
             height={height}
+            objectFit='contain'
         />
     );
 };
