@@ -1,5 +1,6 @@
 import { Button } from "@/components/atom/Button/Button";
 import Ivcard from "@/components/molecules/IvCard/IvCard";
+import CryptLayout from "@/components/organisms/Layouts/CryptLayout/CryptLayout";
 import Footer from "@/components/organisms/Layouts/FooterLayout/Footer";
 import HeroLayout from "@/components/organisms/Layouts/HeroSectionLayout/HeroLayout";
 import IllustrationLayout from "@/components/organisms/Layouts/IllustrationLayout/IllustrationLayout";
@@ -9,11 +10,16 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="container mt-[45px]  flex flex-col ">
-      <Header />
-      <HeroLayout />
-      <IllustrationLayout />
-      <Footer />
+    <main>
+      <div className="container mt-[45px] mb-[60px] flex flex-col ">
+        <Header />
+        <HeroLayout />
+        <IllustrationLayout />
+      </div>
+      <CryptLayout/>
+      <div className="container mt-[45px]  flex flex-col ">
+        <Footer />
+      </div>
     </main>
   );
 }
