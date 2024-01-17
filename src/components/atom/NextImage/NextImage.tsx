@@ -17,7 +17,6 @@ export const NextImage = ({ width, height, auto, imgUrl, className, alt }: NextI
             className={className}
             width={width}
             height={height}
-            objectFit='contain'
         />
     );
 };

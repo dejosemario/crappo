@@ -15,7 +15,7 @@ const InputText = ({placeholder, name, className, Value, required, type, onChang
         <input
             placeholder={placeholder}
             name={name}
-            className={`border border-[#3671E9] focus:outline-none py-[14px] px-4 ${className}`}
+            className={`border-b-2 border-gray-200 order-none focus:outline-none py-[14px] pr-4  placeholder-black ${className}`}
             value={Value}
             required={required}
             type={type}
