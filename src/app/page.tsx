@@ -17,7 +17,7 @@ export default function Home() {
         <IllustrationLayout />
       </div>
       <CryptLayout/>
-      <div className="container mt-[45px]  flex flex-col ">
+      <div className="container mt-[45px] flex flex-col ">
         <Footer />
       </div>
     </main>
