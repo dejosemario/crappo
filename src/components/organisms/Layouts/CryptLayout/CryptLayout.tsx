@@ -6,13 +6,14 @@ import InputText from "@/components/atom/InputText/InputText";
 import Text from "@/components/atom/Text/Text";
 import { Button } from "@/components/atom/Button/Button";
 import { Heading } from "@/components/atom/Heading/Heading";
+import CryptCard from "@/components/molecules/CryptCard/CryptCard";
 
 const CryptLayout = () => {
   const [hashRate, setHashRate] = useState("");
   const [power, setPower] = useState("");
 
   return (
-    <div className={`bg-white h-[6023px] text-black`}>
+    <div className={`bg-white text-black pb-[100px]`} >
       <div className="container flex justify-center items-center flex-col pt-[184px] ">
         <Text className="max-w-[622px] text-center text-gray-200 text-[18px] pb-[64px]">
           Let’s check your hash rate to see how much you will earn today,
@@ -57,6 +58,7 @@ const CryptLayout = () => {
         <Heading className="max-w-[741px] text-center mt-[100px]" level={2}>
           Trade securely and market the high growth cryptocurrencies.
         </Heading>
+        <CryptCard />
       </div>
     </div>
   );

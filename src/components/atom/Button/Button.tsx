@@ -5,6 +5,7 @@ interface ButtonProps {
   withIcon?: boolean | false;
   outlined?: boolean;
   hover?: boolean | true;
+  className?: string;
 }
 
 export const Button = ({
@@ -12,12 +13,13 @@ export const Button = ({
   withIcon,
   outlined,
   hover,
+  className,
 }: ButtonProps) => {
   return (
     <button
       className={` ${
         outlined ? " text-black bg-white" : "text-white"
-      } py-2 px-4 rounded-full flex flex-row items-center bg-[#3671E9]`}
+      } py-2 px-4 rounded-full flex flex-row items-center bg-[#3671E9] ${className}`}
     >
       <span className={`${hover && "hover:opacity-100"} `}>{children}</span>
       {withIcon && (
