@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 interface NextImageProps {
-    width?: number;
-    height?: number;
+    width?: number | any;
+    height?: number | any;
     auto?: boolean;
     imgUrl: string | any;
     className?: string;

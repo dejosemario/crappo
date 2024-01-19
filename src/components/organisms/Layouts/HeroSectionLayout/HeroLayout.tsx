@@ -34,7 +34,7 @@ const HeroLayout: React.FC = () => {
         </div>
       </div>
       <div className="absolute top-[370px] z-[-1]   ">
-        <NextImage imgUrl={Line1} alt="Bitcon-hero-log" />
+        <NextImage imgUrl={Line1} alt="Bitcon-hero-log"  width="auto" height="auto" />
       </div>
       <div className="absolute top-[250px] left-[700px]  right-[-200px] z-[-1] ">
         <NextImage imgUrl={Line2} alt="Bitcon-hero-log" />
