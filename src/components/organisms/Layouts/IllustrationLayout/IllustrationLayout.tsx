@@ -2,9 +2,9 @@ import { Button } from "@/components/atom/Button/Button";
 import { Heading } from "@/components/atom/Heading/Heading";
 import { NextImage } from "@/components/atom/NextImage/NextImage";
 import Text from "@/components/atom/Text/Text";
-import Illustration from "@/public/images/illustrations.svg";
-import Dgradient from "@/public/images/d.svg";
-import Ugradient from "@/public/images/u.svg";
+import Illustration from "/src/public/images/illustration.svg";
+import Dgradient from "/src/public/images/d.svg";
+import Ugradient from "/src/public/images/u.svg";
 
 const IllustrationLayout = () => {
   return (
