@@ -28,7 +28,7 @@ const Ivcard = () => {
   ];
 
   return (
-    <div className="flex justify-between pt-[239px]">
+    <div className="flex justify-between pt-[239px] flex-wrap">
       {Ivdatas.map(({imgUrl, alt, heading, text}, idx) => (
         <div className="flex gap-6 items-center" key={idx}>
           <div>

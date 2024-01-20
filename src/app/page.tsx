@@ -12,7 +12,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <div className="container mt-[45px] mb-[60px] flex flex-col ">
+      <div className="container mt-[45px] mb-[60px] flex flex-col overflow-hidden">
         <Header />
         <HeroLayout />
         <IllustrationLayout />

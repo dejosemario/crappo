@@ -7,7 +7,7 @@ import Text from "@/components/atom/Text/Text";
 
 export default function InvestCard() {
   return (
-    <div className="w-full flex justify-between mt-[100px]">
+    <div className="w-full flex justify-between mt-[100px] flex-wrap">
       <div className="flex flex-col gap-y-6">
         <Heading level={3}>Invest Smart</Heading>
         <Text className="max-w-[408px]">
@@ -46,7 +46,7 @@ export default function InvestCard() {
           <Text className="text-sm text-[#42FFFF]">+125%</Text>
         </div>
         <div>
-          <NextImage imgUrl={WaterLevel} alt={"bitcoin-logo"} />
+          <NextImage imgUrl={WaterLevel} alt={"water-logo"} />
         </div>
       </div>
     </div>

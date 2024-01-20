@@ -41,7 +41,7 @@ const cryptDatas = [
 
 export default function CryptCard() {
   return (
-    <div className="flex justify-between w-full mt-[64px]">
+    <div className="flex justify-between w-full mt-[64px] flex-wrap">
       {cryptDatas?.map(
         (
           { color, title, imgUrl, imgAlt, sub, description, button, textColor },
