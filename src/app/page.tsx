@@ -1,5 +1,6 @@
 import { Button } from "@/components/atom/Button/Button";
 import Ivcard from "@/components/molecules/IvCard/IvCard";
+import StartCard from "@/components/molecules/StartCard/StartCard";
 import CryptLayout from "@/components/organisms/Layouts/CryptLayout/CryptLayout";
 import Footer from "@/components/organisms/Layouts/FooterLayout/Footer";
 import HeroLayout from "@/components/organisms/Layouts/HeroSectionLayout/HeroLayout";
@@ -17,8 +18,9 @@ export default function Home() {
         <HeroLayout />
         <IllustrationLayout />
       </div>
-      <CryptLayout/>
+      <CryptLayout />
       <MarketLayout />
+      <StartCard />
       <div className="container mt-[45px] flex flex-col ">
         <Footer />
       </div>

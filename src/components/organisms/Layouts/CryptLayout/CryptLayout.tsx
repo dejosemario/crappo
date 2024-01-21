@@ -22,7 +22,7 @@ const CryptLayout = () => {
         <div className="flex justify-evenly w-[942px] items-center">
           <InputText
             placeholder="Enter your hash rate"
-            className="mb-[16px] w-[402px]"
+            className="mb-[16px] w-[374px]"
             Value={hashRate}
             type="text"
             required={true}
