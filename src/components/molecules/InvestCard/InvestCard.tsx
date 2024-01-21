@@ -4,6 +4,7 @@ import { NextImage } from "@/components/atom/NextImage/NextImage";
 import Bitcoin from "/src/public/images/bitconLogo.svg";
 import WaterLevel from "/src/public/images/water-level.svg";
 import Text from "@/components/atom/Text/Text";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function InvestCard() {
   return (
@@ -50,8 +51,27 @@ export default function InvestCard() {
             <NextImage imgUrl={WaterLevel} alt={"water-logo"} />
           </div>
         </div>
-        <div className="absolute rounded-2xl w-[178px] h-[184px] bg-[#491F98] transform -translate-y-1/4 left-[64px]"></div>
-        <div className=" rounded-2xl w-[169px] h-[84px] bg-[#491F98] absolute  right-[56px] transform -translate-y-1/2"></div>
+        <div className="absolute rounded-2xl w-[178px] h-[184px] bg-[#491F98] transform -translate-y-1/4 left-[64px] flex flex-col px-4 py-6 justify-between">
+          <Heading level={6} className=" font-semibold">
+            Increase in Trade
+          </Heading>
+          <div className="flex items-center gap-2 ">
+            <Text className="font-bold text-2xl">+75%</Text>
+            <div className="text-[#FD8589]">
+              <FaArrowUp />
+            </div>
+          </div>
+          <Text>Sell option</Text>
+        </div>
+        <div className=" rounded-2xl w-[169px] h-[84px] bg-[#491F98] absolute  right-[56px] transform -translate-y-1/2 py-4 px-8 text-center flex-col flex  justify-between ">
+          <Heading
+            level={6}
+            className="text-white leading-none text-2xl font-bold"
+          >
+            $15.32
+          </Heading>
+          <Text>Price in dollar</Text>
+        </div>
       </div>
     </div>
   );
