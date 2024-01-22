@@ -6,14 +6,19 @@ import { useState } from "react";
 import InputText from "@/components/atom/InputText/InputText";
 import Text from "@/components/atom/Text/Text";
 import React from "react";
+import { NextImage } from "@/components/atom/NextImage/NextImage";
+import Vector from "/src/public/images/Ambient/vector1.png";
+import BitconShade from "/src/public/images/Ambient/bitcoinShade.png";
+import Line3 from "/src/public/images/Ambient/line3.png";
+import Line4 from "/src/public/images/Ambient/line4.png";
 
 export default function StartCard() {
   const [email, setEmail] = useState("");
   return (
     <div
-      className={`bg-gradient-to-b from-[#2B076E] via-transparent to-[#0D0D2B] text-white p-[99px] w-full relative`}
+      className={`bg-gradient-to-b from-[#2B076E] via-transparent to-[#0D0D2B] text-white p-[99px] w-full relative `}
     >
-      <div className="container flex justify-between items-center pt-[48px] bg-[#3671E9] rounded-2xl pb-12">
+      <div className="container flex justify-between items-center pt-[48px] bg-[#3671E9] rounded-2xl pb-12 relative">
         <div className="flex flex-col gap-y-2">
           <Heading level={3}>Start mining now</Heading>
           <Text className="w-[348px]">
@@ -22,7 +27,7 @@ export default function StartCard() {
         </div>
         <div className="flex gap-10 items-center">
           <InputText
-            placeholder="Enter your hash rate"
+            placeholder="Enter your email"
             className="mb-[16px] w-[402px] border-gray-400 placeholder-white"
             Value={email}
             type="text"
@@ -35,8 +40,19 @@ export default function StartCard() {
             </Button>
           </div>
         </div>
+        <div className="absolute top-0 left-[5vw]">
+          <NextImage imgUrl={Vector} alt="vector1" />
+        </div>
+        <div className="absolute right-[4.5vw] bottom-0">
+          <NextImage imgUrl={BitconShade} alt="bitcoin-shade" />
+        </div>
       </div>
-      <div className=""></div>
+      <div className="absolute bottom-0 left-[5vw]">
+        <NextImage imgUrl={Line4} alt="line-4" />
+      </div>
+      <div className="absolute right-[20vw] bottom-0">
+        <NextImage imgUrl={Line3} alt="line-3" />
+      </div>
     </div>
   );
 }

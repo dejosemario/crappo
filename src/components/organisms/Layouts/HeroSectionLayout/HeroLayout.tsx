@@ -1,7 +1,7 @@
 import { NextImage } from "@/components/atom/NextImage/NextImage";
 import Flatbtc from "/src/public/images/flat-btc.svg";
-import Line1 from "/src/public/images/line1.png";
-import Line2 from "/src/public/images/line2.png";
+import Line1 from "/src/public/images/Ambient/line1.png";
+import Line2 from "/src/public/images/Ambient/line2.png";
 import { Button } from "@/components/atom/Button/Button";
 import Text from "@/components/atom/Text/Text";
 import { Heading } from "@/components/atom/Heading/Heading";
@@ -12,7 +12,7 @@ const HeroLayout: React.FC = () => {
     <div className="relative">
       <div className="flex mt-[32px] w-full justify-between ">
         <div className="flex-1">
-          <div className="flex bg-white-10 w-[365px] pr-[11px] pl-1 py-1 rounded-[32px] gap-4 items-center mt-[100px]">
+          <div className="flex bg-white-10 w-[365px] pr-[11px] pl-1 py-1 rounded-[32px] gap-4 items-center mt-[100px] cursor-pointer">
             <Button outlined>75% SAVE</Button>
             <Text>For the Black Friday weekend</Text>
           </div>

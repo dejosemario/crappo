@@ -3,8 +3,8 @@ import { Heading } from "@/components/atom/Heading/Heading";
 import { NextImage } from "@/components/atom/NextImage/NextImage";
 import Text from "@/components/atom/Text/Text";
 import Illustration from "/src/public/images/illustration.svg";
-import Dgradient from "/src/public/images/d.svg";
-import Ugradient from "/src/public/images/u.svg";
+import Dgradient from "/src/public/images/Ambient/d.svg";
+import Ugradient from "/src/public/images/Ambient/u.svg";
 
 const IllustrationLayout = () => {
   return (

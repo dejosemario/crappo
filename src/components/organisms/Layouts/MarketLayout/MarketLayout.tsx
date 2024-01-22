@@ -5,6 +5,8 @@ import Statistic from "/src/public/images/statistic.svg";
 import InfoCard from "@/components/molecules/InfoCard/InfoCard";
 import ArrowDown from "/src/public/images/arrow-down.svg";
 import ArrowUp from "/src/public/images/arrow-up.svg";
+import SemiCircle from "/src/public/images/Ambient/semi-circle.png";
+import SideCirclePost from "/src/public/images/Ambient/o.png";
 import BitcoinCard from "@/components/molecules/BitcoinCard/BitcoinCard";
 import Text from "@/components/atom/Text/Text";
 
@@ -12,8 +14,8 @@ const MarketHeading: string[] = ["Price", "Change", "Volume(24h)"];
 
 export default function MarketLayout() {
   return (
-    <div className={`bg-[#2B076E] text-white pb-[100px]`}>
-      <div className="container flex justify-center items-center flex-col pt-[184px] ">
+    <div className={`bg-[#2B076E] text-white pb-[80px] relative`}>
+      <div className="container flex justify-center items-center flex-col pt-[100px] ">
         <Heading level={2} className="text-center max-w-[758px]">
           Market sentiments, portfolio, and run the infrastructure of your
           choice
@@ -37,7 +39,7 @@ export default function MarketLayout() {
             message="Use advanced analytical tools. Clear TradingView charts let you track current and historical profit investments."
             buttondetails=" Learn More"
           />
-          <div className="bg-[#35068C] w-[610px] h-[334px] rounded-2xl relative flex  flex-col justify-between py-10 pl-10">
+          <div className="bg-[#35068C] w-[610px] h-[334px] rounded-2xl relative flex  flex-col justify-between py-10 pl-10  z-10">
             <div className="flex justify-between ml-[171px] mr-[49px] ">
               {MarketHeading.map((heading, index) => (
                 <Heading
@@ -78,6 +80,12 @@ export default function MarketLayout() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="absolute top-0 left-[12vw] 2xl:left-[20vw]">
+        <NextImage imgUrl={SemiCircle} alt="circle" />
+      </div>{" "}
+      <div className="absolute right-0 bottom-0 2xl:hidden">
+        <NextImage imgUrl={SideCirclePost} alt="side-circle" />
       </div>
     </div>
   );

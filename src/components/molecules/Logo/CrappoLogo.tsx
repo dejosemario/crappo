@@ -5,7 +5,7 @@ import React from "react";
 
 const CrappoLogo: React.FC = () => {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-4 cursor-pointer">
       <NextImage
         imgUrl={Logo}
         alt={"crappo-logo"}
