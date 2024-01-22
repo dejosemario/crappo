@@ -8,7 +8,7 @@ import Ugradient from "/src/public/images/Ambient/u.svg";
 
 const IllustrationLayout = () => {
   return (
-    <div className="flex justify-between mt-[160px] relative">
+    <div className="flex justify-between mt-[160px] relative flex-wrap">
       <div className=" flex items-start">
         <NextImage imgUrl={Illustration} alt="Illustration-image" />
       </div>
