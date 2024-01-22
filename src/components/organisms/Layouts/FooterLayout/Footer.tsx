@@ -10,11 +10,11 @@ import Bitcoin from "/src/public/images/bitcoin.svg";
 
 const Footer: React.FC = () => {
   const products = [
-    { name: "Home", url: "/home" },
-    { name: "Products", url: "/products" },
-    { name: "About", url: "/about" },
-    { name: "Features", url: "/features" },
-    { name: "Contact", url: "/contact" },
+    { name: "Home", url: "#" },
+    { name: "Products", url: "#" },
+    { name: "About", url: "#" },
+    { name: "Features", url: "#" },
+    { name: "Contact", url: "#" },
   ];
 
   const Resources = [

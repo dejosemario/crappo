@@ -2,36 +2,37 @@ import { Heading } from "@/components/atom/Heading/Heading";
 import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/atom/Button/Button";
+import { Links } from "@/components/atom/Link/Links";
 const NavLayout: React.FC = () => {
   return (
     <nav>
       <ul className="flex gap-8">
         <li>
-          <Link href="/products">
+          <Links>
             <Heading level={6}>Products</Heading>
-          </Link>
+          </Links>
         </li>
         <li>
-          <Link href="/about">
+          <Links>
             <Heading level={6}>About</Heading>
-          </Link>
+          </Links>
         </li>
         <li>
-          <Link href="/contact">
+          <Links>
             <Heading level={6}>Contact</Heading>
-          </Link>
+          </Links>
         </li>
         <div className="flex gap-8 items-center ml-6">
           <li>
-            <Link href="/login">
+            <Links>
               <Heading level={6}>Login</Heading>
-            </Link>
+            </Links>
           </li>
           <span className="text-gray-500 gap-0">|</span>
           <li>
-            <Link href="/features">
+            <Links>
               <Button>Register</Button>
-            </Link>
+            </Links>
           </li>
         </div>
       </ul>
