@@ -5,6 +5,7 @@ import Footer from "@/components/organisms/Layouts/FooterLayout/Footer";
 import HeroLayout from "@/components/organisms/Layouts/HeroSectionLayout/HeroLayout";
 import IllustrationLayout from "@/components/organisms/Layouts/IllustrationLayout/IllustrationLayout";
 import MarketLayout from "@/components/organisms/Layouts/MarketLayout/MarketLayout";
+import React from "react";
 import Header from "@/components/organisms/Layouts/Navlayout/Header";
 
 export default function Home() {
