@@ -7,9 +7,10 @@ interface NextImageProps {
     imgUrl: string | any;
     className?: string;
     alt: string;
+    priority?: boolean;
 }
 
-export const NextImage = ({ width, height, auto, imgUrl, className, alt }: NextImageProps) => {
+export const NextImage = ({ width, height, auto, imgUrl, className, alt, priority}: NextImageProps) => {
     return (
         <Image
             alt={alt}
@@ -17,6 +18,7 @@ export const NextImage = ({ width, height, auto, imgUrl, className, alt }: NextI
             className={className}
             width={width}
             height={height}
+            priority={priority}
         />
     );
 };

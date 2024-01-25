@@ -9,6 +9,7 @@ const CrappoLogo: React.FC = () => {
       <NextImage
         imgUrl={Logo}
         alt={"crappo-logo"}
+        priority={true}
       />
       <Heading level={4} className="font-inter font-semi-bold">CRAPPO</Heading>
     </div>

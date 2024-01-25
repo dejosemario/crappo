@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Description
+Welcome to the Crappo App!
+The Crappo App provides a desktop-only view optimized for a screen resolution of 1440 pixels. It's designed to offer a tailored experience within this specific display setting.
+Purpose
+
+## Purpose
+This application caters to users with a desktop environment and aims to provide a seamless and efficient experience specifically tailored for a screen resolution of 1440 pixels.
+
+Feel free to explore the app and provide feedback to help us enhance your experience!
 
 ##   Getting Started
 
