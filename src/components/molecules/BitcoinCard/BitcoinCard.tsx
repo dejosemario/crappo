@@ -1,4 +1,4 @@
-import EthereumLogo from "/src/public/images/ethereumlogo2.svg";
+import EthereumLogo from "/src/public/images/ethereumLogo2.svg";
 import BitcoinLogo from "/src/public/images/bitconLogo.svg";
 import litcoinLogo from "/src/public/images/litcoinLogo.svg";
 import { NextImage } from "@/components/atom/NextImage/NextImage";
