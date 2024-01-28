@@ -5,7 +5,7 @@ import { Button } from "@/components/atom/Button/Button";
 import { Links } from "@/components/atom/Link/Links";
 const NavLayout: React.FC = () => {
   return (
-    <nav>
+    <nav className="hidden md:flex">
       <ul className="flex gap-8">
         <li>
           <Links>

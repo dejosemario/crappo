@@ -11,7 +11,7 @@ const CrappoLogo: React.FC = () => {
         alt={"crappo-logo"}
         priority={true}
       />
-      <Heading level={4} className="font-inter font-semi-bold">CRAPPO</Heading>
+      <Heading level={4} className="font-inter font-semi-bold text-[1rem] md:text-[1.25rem] ">CRAPPO</Heading>
     </div>
   );
 };

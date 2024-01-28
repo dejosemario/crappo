@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     container: {
-      padding: "7.5rem",
+      padding: "7%",
       center: true,
     },
     screens: {

@@ -11,7 +11,7 @@ import Header from "@/components/organisms/Layouts/Navlayout/Header";
 export default function Home() {
   return (
     <main>
-      <div className="container mt-[45px] mb-[60px] flex flex-col overflow-hidden">
+      <div className="container mt-[1.5625rem] md:mt-[2.8125rem] mb-[3.75rem] flex flex-col overflow-hidden">
         <Header />
         <HeroLayout />
         <IllustrationLayout />
@@ -19,7 +19,7 @@ export default function Home() {
       <CryptLayout />
       <MarketLayout />
       <StartCard />
-      <div className="container mt-[45px] flex flex-col ">
+      <div className="container mt-[2.8125rem] flex flex-col ">
         <Footer />
       </div>
     </main>

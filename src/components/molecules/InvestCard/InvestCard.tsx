@@ -51,7 +51,7 @@ export default function InvestCard() {
             <NextImage imgUrl={WaterLevel} alt={"water-logo"} />
           </div>
         </div>
-        <div className="absolute rounded-2xl w-[178px] h-[184px] bg-[#491F98] transform -translate-y-1/4 left-[64px] flex flex-col px-4 py-6 justify-between">
+        <div className="absolute rounded-2xl w-[178px] h-[184px] bg-[#491F98] transform -translate-y-1/4 gileft-[64px] flex flex-col px-4 py-6 justify-between">
           <Heading level={6} className=" font-semibold">
             Increase in Trade
           </Heading>
