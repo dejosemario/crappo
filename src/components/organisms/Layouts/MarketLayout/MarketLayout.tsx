@@ -32,7 +32,7 @@ export default function MarketLayout() {
           buttondetails=" Learn More"
         />
       </div>
-      <div className="container flex justify-center items-center flex-col flex-wrap">
+      <div className="container md:flex justify-center items-center flex-col hidden ">
         <div className="flex w-full justify-between wrap">
           <InfoCard
             intro="Grow your profit and track your investments"

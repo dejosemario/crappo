@@ -19,7 +19,7 @@ const CryptLayout = () => {
           Let’s check your hash rate to see how much you will earn today,
           Exercitation veniam consequat sunt nostrud amet.
         </Text>
-        <div className="flex justify-evenly w-[942px] items-center">
+        <div className="flex justify-evenly w-[942px] items-center md:flex-row flex-col">
           <InputText
             placeholder="Enter your hash rate"
             className="mb-[16px] w-[374px]"

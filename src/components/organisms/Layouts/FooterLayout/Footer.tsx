@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="flex w-full justify-between gap-24">
-        <Text>&copy;2021 CRAPPO. All rights reserved</Text>
+        <Text className="md:text-base text-sm">&copy;2021 CRAPPO. All rights reserved</Text>
         <SocialLink />
       </div>
     </footer>

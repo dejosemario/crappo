@@ -8,7 +8,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 export default function InvestCard() {
   return (
-    <div className="w-full flex justify-between mt-[100px] flex-wrap">
+    <div className="w-full flex justify-between mt-[100px] flex-wrap hidden md:flex">
       <div className="flex flex-col gap-y-6">
         <Heading level={3}>Invest Smart</Heading>
         <Text className="max-w-[408px]">

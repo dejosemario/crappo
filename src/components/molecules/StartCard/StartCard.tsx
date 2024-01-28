@@ -18,17 +18,17 @@ export default function StartCard() {
     <div
       className={`bg-gradient-to-b from-[#2B076E] via-transparent to-[#0D0D2B] text-white p-[99px] w-full relative `}
     >
-      <div className="container flex justify-between items-center pt-[48px] bg-[#3671E9] rounded-2xl pb-12 relative">
+      <div className="container flex justify-between items-center pt-[48px] bg-[#3671E9] rounded-2xl pb-12 relative flex-col md:flex-row">
         <div className="flex flex-col gap-y-2">
           <Heading level={3}>Start mining now</Heading>
           <Text className="w-[348px]">
             Join now with CRAPPO to get the latest news and start mining now
           </Text>
         </div>
-        <div className="flex gap-10 items-center">
+        <div className="flex gap-10 items-center flex-wrap">
           <InputText
             placeholder="Enter your email"
-            className="mb-[16px] w-[402px] border-gray-400 placeholder-white"
+            className="mb-[16px] w-[402px] border-gray-400 placeholder-white "
             Value={email}
             type="text"
             required={true}
