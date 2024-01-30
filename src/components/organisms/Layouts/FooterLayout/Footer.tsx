@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col w-[355px] gap-12">
+        <div className="flex flex-col w-[355px] gap-12  pt-8 md:pt-0">
           <Heading level={3}>We Accept following payment systems</Heading>
           <div className="flex justify-between">
             <NextImage imgUrl={Visa} alt={"visa"} width={96} height={64} />
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex w-full justify-between gap-24">
+      <div className="flex w-full justify-between gap-4 md:gap-24 flex-col md:flex-row p-12 md:p-0">
         <Text className="md:text-base text-sm">&copy;2021 CRAPPO. All rights reserved</Text>
         <SocialLink />
       </div>

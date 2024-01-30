@@ -22,7 +22,7 @@ export default function MarketLayout() {
         </Heading>
         <InvestCard />
       </div>
-      <div className="flex justify-between w-full pb-[130px] ">
+      <div className="flex justify-between w-full pb-[130px] flex-col md:flex-row gap-y-24 md:gap-0">
         <div>
           <NextImage imgUrl={Statistic} alt="statistic-img" />
         </div>
@@ -81,10 +81,10 @@ export default function MarketLayout() {
           </div>
         </div>
       </div>
-      <div className="absolute top-0 left-[12vw] 2xl:left-[20vw]">
+      <div className="absolute hidden md:flex md:top-0 left-[12vw] 2xl:left-[20vw]">
         <NextImage imgUrl={SemiCircle} alt="circle" />
-      </div>{" "}
-      <div className="absolute right-0 bottom-0 2xl:hidden">
+      </div>
+      <div className="absolute hidden md:flex right-0 bottom-0 ">
         <NextImage imgUrl={SideCirclePost} alt="side-circle" />
       </div>
     </div>

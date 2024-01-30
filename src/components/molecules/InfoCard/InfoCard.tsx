@@ -14,11 +14,11 @@ export default function InfoCard({
   buttondetails,
 }: InfoCardProps) {
   return (
-    <div className="mr-[231px] 2xl:w-[530px] self-center">
-      <Heading level={3} className="max-w-[454px]  ">
+    <div className="md:mr-[231px] 2xl:w-[530px] self-center px-8 md:px-0 ">
+      <Heading level={3} className="md:max-w-[454px]">
         {intro}
       </Heading>
-      <Text className="w-[408px] pt-6">{message}</Text>
+      <Text className="md:max-w-[408px] md:pt-6">{message}</Text>
       <div className="pt-8">
         <Button>{buttondetails}</Button>
       </div>

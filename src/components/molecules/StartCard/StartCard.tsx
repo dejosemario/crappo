@@ -16,19 +16,19 @@ export default function StartCard() {
   const [email, setEmail] = useState("");
   return (
     <div
-      className={`bg-gradient-to-b from-[#2B076E] via-transparent to-[#0D0D2B] text-white p-[99px] w-full relative `}
+      className={`bg-gradient-to-b from-[#2B076E] via-transparent to-[#0D0D2B] text-white md:p-[99px] w-full relative`}
     >
-      <div className="container flex justify-between items-center pt-[48px] bg-[#3671E9] rounded-2xl pb-12 relative flex-col md:flex-row">
-        <div className="flex flex-col gap-y-2">
+      <div className="container flex md:justify-between items-center w-full md:pt-[48px] bg-[#3671E9] rounded-2xl pb-12 relative flex-col md:flex-row">
+        <div className="flex flex-col gap-y-2 pt-10 md:pt-0">
           <Heading level={3}>Start mining now</Heading>
-          <Text className="w-[348px]">
+          <Text className="md:w-[348px]">
             Join now with CRAPPO to get the latest news and start mining now
           </Text>
         </div>
-        <div className="flex gap-10 items-center flex-wrap">
+        <div className="flex gap-10 items-center md:flex-row flex-col md:w-fit w-full ">
           <InputText
             placeholder="Enter your email"
-            className="mb-[16px] w-[402px] border-gray-400 placeholder-white "
+            className="mb-[16px] md:w-[402px] w-full border-gray-400 placeholder-white "
             Value={email}
             type="text"
             required={true}
@@ -43,7 +43,7 @@ export default function StartCard() {
         <div className="absolute top-0 left-[5vw]">
           <NextImage imgUrl={Vector} alt="vector1" />
         </div>
-        <div className="absolute right-[4.5vw] bottom-0">
+        <div className="absolute right-[4.5vw] bottom-0 ">
           <NextImage imgUrl={BitconShade} alt="bitcoin-shade" />
         </div>
       </div>

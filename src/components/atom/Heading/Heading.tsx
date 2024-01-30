@@ -10,19 +10,19 @@ export const Heading = ({ children, level, className }: HeadingProps) => {
   switch (level) {
     case 1:
       return (
-        <h1 className={`font-bold text-[3rem] md:text-[4rem]  leading-normal ${className}`}>
+        <h1 className={`font-bold text-[2.7rem] md:text-[4rem]  leading-normal ${className}`}>
           {children}
         </h1>
       );
     case 2:
       return (
-        <h2 className={`font-bold text-[2.5rem] leading-15 ${className}`}>
+        <h2 className={`font-bold text-3xl md:text-[2.5rem] leading-15 ${className}`}>
           {children}
         </h2>
       );
     case 3:
       return (
-        <h3 className={`font-bold text-[2rem] leading-12 ${className}`}>
+        <h3 className={`font-bold text-xl md:text-[2rem] leading-12 ${className}`}>
           {children}
         </h3>
       );

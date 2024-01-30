@@ -8,7 +8,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 export default function InvestCard() {
   return (
-    <div className="w-full flex justify-between mt-[100px] flex-wrap hidden md:flex">
+    <div className="w-full justify-between mt-[100px] flex-wrap flex-col md:flex-row flex">
       <div className="flex flex-col gap-y-6">
         <Heading level={3}>Invest Smart</Heading>
         <Text className="max-w-[408px]">
@@ -19,8 +19,8 @@ export default function InvestCard() {
           <Button>Learn More</Button>
         </div>
       </div>
-      <div className="relative pb-[249px]">
-        <div className="flex flex-col bg-[#35068C] w-[580px] h-[298px] rounded-2xl p-[40px]">
+      <div className="relative pt-8 md:pt-0 pb-[249px]">
+        <div className="flex flex-col bg-[#35068C] md:w-[580px] h-[240px] md:h-[298px] rounded-2xl p-[40px]">
           <div className="flex justify-between mb-6">
             <div className="flex gap-4">
               <div>
@@ -51,7 +51,7 @@ export default function InvestCard() {
             <NextImage imgUrl={WaterLevel} alt={"water-logo"} />
           </div>
         </div>
-        <div className="absolute rounded-2xl w-[178px] h-[184px] bg-[#491F98] transform -translate-y-1/4 gileft-[64px] flex flex-col px-4 py-6 justify-between">
+        <div className="absolute rounded-2xl w-[120px] md:w-[178px] h-[184px] bg-[#491F98] transform -translate-y-1/4 left-0 md:left-[10%] flex flex-col px-2 md:px-4 py-2 md:py-6 justify-between">
           <Heading level={6} className=" font-semibold">
             Increase in Trade
           </Heading>
@@ -63,7 +63,7 @@ export default function InvestCard() {
           </div>
           <Text>Sell option</Text>
         </div>
-        <div className=" rounded-2xl w-[169px] h-[84px] bg-[#491F98] absolute  right-[56px] transform -translate-y-1/2 py-4 px-8 text-center flex-col flex  justify-between ">
+        <div className=" rounded-2xl md:w-[169px] h-[84px] bg-[#491F98] absolute right-0 md:right-[10%] transform -translate-y-1/2 py-4 px-8 text-center flex-col flex  justify-between ">
           <Heading
             level={6}
             className="text-white leading-none text-2xl font-bold"
