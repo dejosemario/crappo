@@ -13,7 +13,7 @@ const IllustrationLayout = () => {
         <NextImage imgUrl={Illustration} alt="Illustration-image" />
       </div>
       <div className="pt-20">
-        <Heading level={2} className="max-w-[480px]">
+        <Heading level={2} className="max-w-[480px] leading-normal">
           Why you should choose CRAPPO
         </Heading>
         <Text className="max-w-[408px] pb-8">

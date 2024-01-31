@@ -28,7 +28,7 @@ export default function StartCard() {
         <div className="flex gap-10 items-center md:flex-row flex-col md:w-fit w-full ">
           <InputText
             placeholder="Enter your email"
-            className="mb-[16px] md:w-[402px] w-full border-gray-400 placeholder-white "
+            className="mb-[16px] md:max-w-[402px] w-full border-gray-400 placeholder-white "
             Value={email}
             type="text"
             required={true}
