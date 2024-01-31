@@ -28,7 +28,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="flex flex-col w-full py-[80px] h-[522px] justify-between">
       <div className="flex w-full justify-between items-start flex-wrap">
-        <CrappoLogo />
+        <div className="hidden md:flex">
+          <CrappoLogo />
+        </div>
         <div className="flex flex-col ">
           <Heading level={5}>Quick Link</Heading>
           <div className="flex flex-col pt-8 h-[190px] justify-between">
@@ -68,7 +70,9 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="flex w-full justify-between gap-4 md:gap-24 flex-col md:flex-row p-12 md:p-0">
-        <Text className="md:text-base text-sm">&copy;2021 CRAPPO. All rights reserved</Text>
+        <Text className="md:text-base text-sm">
+          &copy;2021 CRAPPO. All rights reserved
+        </Text>
         <SocialLink />
       </div>
     </footer>

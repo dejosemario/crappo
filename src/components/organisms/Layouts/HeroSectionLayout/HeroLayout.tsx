@@ -12,7 +12,7 @@ const HeroLayout: React.FC = () => {
     <div className="relative">
       <div className="flex mt-[2rem] w-full flex-col md:flex-row">
         <div className="md:flex-1 w-full">
-          <div className="flex bg-white-10 md:w-[22.813rem] pr-[0.6875rem] md:pl-0.0625rem py-0.0625rem rounded-[2rem] gap-4 items-center md:mt-[6.25rem] cursor-pointer">
+          <div className="flex bg-white-10 md:w-[22.813rem] pr-[0.6875rem] md:pl-0.0625rem py-0.0625rem rounded-[2rem] gap-4 items-center mt-[4rem] md:mt-[6.25rem] cursor-pointer">
             <Button outlined className="text-sm md:text-base">
               75% SAVE
             </Button>
